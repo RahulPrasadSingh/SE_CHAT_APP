@@ -28,7 +28,7 @@ jobs:
         working-directory: ./client # Adjust path if frontend is located in a different folder
 
       - name: Run Frontend Tests
-        run: npm run dev
+        # run: npm run dev
         working-directory: ./client
 
       - name: Build Frontend
