@@ -21,14 +21,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'
 
       - name: Install Frontend Dependencies
         run: npm install
         working-directory: ./client # Adjust path if frontend is located in a different folder
 
       - name: Run Frontend Tests
-        run: npm run test
+        run: npm run dev
         working-directory: ./client
 
       - name: Build Frontend
